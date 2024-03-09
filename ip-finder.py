@@ -8,8 +8,16 @@ def ping_website(ip_address):
         print("\nPing aborted by user.")
 
 try:
-    print("\tip Finder by linux\n")
-    website = input("Enter the website URL:-")
+    print('''\033[32m
+    _         _____ _           _           
+   (_)_ __   |  ___(_)_ __   __| | ___ _ __ 
+   | | '_ \  | |_  | | '_ \ / _` |/ _ \ '__|
+   | | |_) | |  _| | | | | | (_| |  __/ |   
+   |_| .__/  |_|   |_|_| |_|\__,_|\___|_|   
+     |_|
+                                    by linux        
+\033[0m''')
+    website = input("Enter the website URL(www.Example.com):-")
     ip_address = socket.gethostbyname(website)
     print(f"The ip address of Website is:{ip_address}")
 
